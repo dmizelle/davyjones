@@ -1,0 +1,8 @@
+---
+nodeLabels:
+  - label: k3s.io/hostname
+    value: k3d-k3s-default-worker-7
+evict: true
+daemonsets:
+  - namespace: kube-system
+    name: svclb-traefik
